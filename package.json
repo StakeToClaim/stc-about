@@ -1,11 +1,8 @@
 {
-    "name": "spacemax",
-    "title": "SpaceMax - Multipurpose Landing Page",
-    "description": "landing page template",
-    "author": "Elegant Pixel",
-    "url": "https://themeforest.net/user/elegant_pixel/portfolio",
+    "name": "stcabout",
+    "title": "Stc About - anding Page",
+    "author": "hightouch",
     "version": "1.0.0",
-    "license": "Under Themeforest (https://themeforest.net/licenses)",
     "paths": {
         "css": "./css",
         "img": "./img",
