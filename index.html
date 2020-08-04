@@ -18,10 +18,12 @@
     <link rel="stylesheet" href="css/app.css">
     <!-- Your CSS -->
     <link rel="stylesheet" href="css/custom.css">
-
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
 </head>
 
-<body class="theme-blue theme-gradient-3" data-spy="scroll" data-target="#navbar-nav" data-animation="false" data-appearance="darkblue">
+<body class="theme-blue theme-gradient-3" data-spy="scroll" data-target="#navbar-nav" data-animation="false"
+    data-appearance="darkblue">
 
     <main class="main">
         <!-- =========== Start of Navigation (main menu) ============ -->
@@ -32,14 +34,16 @@
                     <img class="navbar-brand__sticky" src="img/brand-logo-white.png" alt="sticky brand-logo">
                 </a>
                 <!--  End of brand logo -->
-                <button class="navbar-toggler d-lg-none" type="button" data-toggle="navbarToggler" aria-label="Toggle navigation">
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="navbarToggler"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <!-- end of Nav toggler -->
 
                 <div class="navbar-inner ml-lg-auto">
                     <!--  Nav close button inside off-canvas/ mobile menu -->
-                    <button class="navbar-toggler d-lg-none" type="button" data-toggle="navbarToggler" aria-label="Toggle navigation">
+                    <button class="navbar-toggler d-lg-none" type="button" data-toggle="navbarToggler"
+                        aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <!-- end of Nav Toggoler -->
@@ -67,14 +71,18 @@
                         <!-- end of nav menu items -->
                     </nav>
                 </div>
-                <div class="d-flex flex-column flex-sm-row align-items-center d-sm-inline-block ml-lg-1 ml-xl-2 mr-5 mr-sm-6 m-lg-0">
-                    <a href="#" class="btn btn-size--md btn-border btn-border--width--2 btn-border--color--primary color--white rounded--full btn-hover--3d btn-hover--splash d-none d-sm-inline-block">
+                <div
+                    class="d-flex flex-column flex-sm-row align-items-center d-sm-inline-block ml-lg-1 ml-xl-2 mr-5 mr-sm-6 m-lg-0">
+                    <a href="#"
+                        class="btn btn-size--md btn-border btn-border--width--2 btn-border--color--primary color--white rounded--full btn-hover--3d btn-hover--splash d-none d-sm-inline-block">
                         <span class="btn__text d-flex align-items-center">Join our Telegram </span>
                     </a>
-                    <a href="#" class="btn btn-size--md btn-bg--primary rounded--full btn-hover--3d btn-hover--splas ml-lg-1 ml-xl-1 btn-size--md btn-border btn-border--width--2 btn-border--color--primary color--white rounded--full btn-hover--3d btn-hover--splash d-none d-sm-inline-block">
+                    <a href="#"
+                        class="btn btn-size--md btn-bg--primary rounded--full btn-hover--3d btn-hover--splas ml-lg-1 ml-xl-1 btn-size--md btn-border btn-border--width--2 btn-border--color--primary color--white rounded--full btn-hover--3d btn-hover--splash d-none d-sm-inline-block">
                         <span class="btn__text d-flex align-items-center">Buy STC </span>
                     </a>
-                    <a href="https://signup.staketoclaim.com" class="btn btn-size--md btn-bg--primary rounded--full btn-hover--3d btn-hover--splash">
+                    <a href="https://signup.staketoclaim.com"
+                        class="btn btn-size--md btn-bg--primary rounded--full btn-hover--3d btn-hover--splash">
                         <span class="btn__text d-flex align-items-center">
                             <i class="icon icon-a-add color--white pr-1 h6-font font-w--700"></i>
                             Sign up
@@ -88,7 +96,8 @@
         <!-- =========== End of Navigation (main menu)  ============ -->
 
         <!-- =========== Start of Hero ============ -->
-        <section class="hero hero--v6 hero--full section--darkblue bg-gradient--darkblue--1 d-flex align-items-center hidden">
+        <section
+            class="hero hero--v6 hero--full section--darkblue bg-gradient--darkblue--1 d-flex align-items-center hidden">
             <div class="background-holder background--bottom z-index1">
                 <img src="img/layout/map-1.png" alt="image" class="background-image-holder">
             </div>
@@ -97,27 +106,36 @@
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 620">
                     <defs>
                         <linearGradient id="wave-1-a" x1="91.821%" x2="8.258%" y1="-3.695%" y2="81.178%">
-                        <stop offset="0%" stop-color="#1A1A1A"/>
-                        <stop offset="100%" stop-color="#4E4E4E"/>
+                            <stop offset="0%" stop-color="#1A1A1A" />
+                            <stop offset="100%" stop-color="#4E4E4E" />
                         </linearGradient>
                         <linearGradient id="wave-1-b" x1="90.535%" x2="10.832%" y1="4.232%" y2="85.759%">
-                        <stop offset="0%" stop-color="#F5AC53" stop-opacity="1"/>
-                        <stop offset="100%" stop-color="#F08821" stop-opacity="1"/>
+                            <stop offset="0%" stop-color="#F5AC53" stop-opacity="1" />
+                            <stop offset="100%" stop-color="#F08821" stop-opacity="1" />
                         </linearGradient>
                     </defs>
-                    <path class="svg-line" fill="url(#wave-1-a)" fill-rule="evenodd" stroke="url(#wave-1-b)" stroke-width="6" d="M-22.367223,829.365369 C47.8180949,725.233038 134.111268,731.437531 234.193598,847.152817 C273.353512,891.087195 307.028199,910.593177 338.265123,909.853439 C365.092805,909.218118 390.288083,894.182042 420.454093,863.630787 C429.588386,854.379841 438.997249,843.964548 451.335914,829.645952 C453.858532,826.718541 476.633091,799.992904 483.603802,791.987122 C504.948033,767.473516 522.234002,749.459356 540.435668,733.563857 C562.788651,714.043017 585.163058,699.16629 608.833467,688.824275 C664.49258,664.505837 726.433205,665.853427 799.302255,697.505792 C874.685922,730.250439 930.021659,735.252444 973.79212,717.251707 C992.450868,709.578239 1009.12469,697.759955 1025.59014,681.307946 C1038.52265,668.385995 1049.41242,655.028513 1067.90797,630.411498 C1069.06331,628.873768 1074.30586,621.882493 1075.73545,619.980561 C1094.31817,595.258063 1105.7581,581.219491 1119.4406,567.377636 C1137.08772,549.52499 1155.23692,536.056623 1175.64738,526.508862 C1223.79391,503.986512 1284.04516,503.894195 1364.18517,530.10651 C1441.86592,555.514446 1503.30729,554.203957 1555.08071,530.306348 C1577.09537,520.14481 1597.32891,505.962764 1617.26372,487.437577 C1633.34022,472.497869 1648.09715,456.026992 1667.76056,431.934359 C1670.72185,428.306027 1689.78833,404.658967 1695.30396,397.965487 C1712.53689,377.052492 1725.79585,362.613652 1739.58866,350.465124 C1756.33384,335.716199 1772.9761,325.393365 1790.81046,319.319361 C1831.54878,305.444757 1878.51106,314.004559 1937.4923,348.861006 C2123.16473,458.588806 2144.25888,666.20199 2001.45303,970.525832 L2000.65244,972.231901 L-125.452084,994.056123 L-22.422471,829.450405 L-22.367223,829.365369 Z" transform="translate(0 -310)"/>
+                    <path class="svg-line" fill="url(#wave-1-a)" fill-rule="evenodd" stroke="url(#wave-1-b)"
+                        stroke-width="6"
+                        d="M-22.367223,829.365369 C47.8180949,725.233038 134.111268,731.437531 234.193598,847.152817 C273.353512,891.087195 307.028199,910.593177 338.265123,909.853439 C365.092805,909.218118 390.288083,894.182042 420.454093,863.630787 C429.588386,854.379841 438.997249,843.964548 451.335914,829.645952 C453.858532,826.718541 476.633091,799.992904 483.603802,791.987122 C504.948033,767.473516 522.234002,749.459356 540.435668,733.563857 C562.788651,714.043017 585.163058,699.16629 608.833467,688.824275 C664.49258,664.505837 726.433205,665.853427 799.302255,697.505792 C874.685922,730.250439 930.021659,735.252444 973.79212,717.251707 C992.450868,709.578239 1009.12469,697.759955 1025.59014,681.307946 C1038.52265,668.385995 1049.41242,655.028513 1067.90797,630.411498 C1069.06331,628.873768 1074.30586,621.882493 1075.73545,619.980561 C1094.31817,595.258063 1105.7581,581.219491 1119.4406,567.377636 C1137.08772,549.52499 1155.23692,536.056623 1175.64738,526.508862 C1223.79391,503.986512 1284.04516,503.894195 1364.18517,530.10651 C1441.86592,555.514446 1503.30729,554.203957 1555.08071,530.306348 C1577.09537,520.14481 1597.32891,505.962764 1617.26372,487.437577 C1633.34022,472.497869 1648.09715,456.026992 1667.76056,431.934359 C1670.72185,428.306027 1689.78833,404.658967 1695.30396,397.965487 C1712.53689,377.052492 1725.79585,362.613652 1739.58866,350.465124 C1756.33384,335.716199 1772.9761,325.393365 1790.81046,319.319361 C1831.54878,305.444757 1878.51106,314.004559 1937.4923,348.861006 C2123.16473,458.588806 2144.25888,666.20199 2001.45303,970.525832 L2000.65244,972.231901 L-125.452084,994.056123 L-22.422471,829.450405 L-22.367223,829.365369 Z"
+                        transform="translate(0 -310)" />
                 </svg>
             </div>
             <!-- end of svg shape -->
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-md-10 col-lg-8 col-xl-7 mx-auto mx-lg-0 mb-3 mt-8 mt-lg-0 text-center text-lg-left z-index2">
+                    <div
+                        class="col-12 col-md-10 col-lg-8 col-xl-7 mx-auto mx-lg-0 mb-3 mt-8 mt-lg-0 text-center text-lg-left z-index2">
                         <div class="hero-content">
-                            <h1 class="hero__title font-w--600 mb-2 mb-lg-3">StakeToClaim - Digital branding in the cryptocurrency world </h1>
-                            <p class="hero__description text-color--200 font-size--20 opacity--80 mb-3 mb-lg-5 mb-md-6">By using Blockchain technology, we aim to revolutionize digital branding. For more information, you can read the whitepaper.</p>
+                            <h1 class="hero__title font-w--600 mb-2 mb-lg-3">StakeToClaim - Digital branding in the
+                                cryptocurrency world </h1>
+                            <p class="hero__description text-color--200 font-size--20 opacity--80 mb-3 mb-lg-5 mb-md-6">
+                                By using Blockchain technology, we aim to revolutionize digital branding. For more
+                                information, you can read the whitepaper.</p>
 
-                            <div class="button-group d-flex flex-column flex-sm-row align-items-center d-sm-inline-block">
-                                <a href="./login.html" class="btn btn-bg--primary rounded--full btn-hover--3d btn-hover--splash">
+                            <div
+                                class="button-group d-flex flex-column flex-sm-row align-items-center d-sm-inline-block">
+                                <a href="./login.html"
+                                    class="btn btn-bg--primary rounded--full btn-hover--3d btn-hover--splash">
                                     <span class="btn__text">Buy STC Now</span>
                                 </a>
 
@@ -143,11 +161,13 @@
                     </div> -->
                     <!-- end of social icon -->
 
-                    <div class="col-xl-5 col-lg-7 position-relative pos-abs-xl-bottom-right z-index1 col-12 pb-md-5 pr-3 text-left">
+                    <div
+                        class="col-xl-5 col-lg-7 position-relative pos-abs-xl-bottom-right z-index1 col-12 pb-md-5 pr-3 text-left">
                         <div class="ico-progress ico-progress--v1">
                             <div class="text-center text-lg-left">
                                 <span class="font-size--20 color--white mb-1">Sale Ends In:</span>
-                                <ul class="countdown d-flex mb-4 justify-content-center justify-content-lg-start text-left" id="date" data-date="Sep 30, 2020">
+                                <ul class="countdown d-flex mb-4 justify-content-center justify-content-lg-start text-left"
+                                    id="date" data-date="Aug 14, 2021">
 
                                     <li class="d-flex flex-column mr-2 mr-sm-3">
                                         <span class="countdown__count h2-font font-w--500 mb-1" id="days"></span>
@@ -172,16 +192,17 @@
                             </div>
                             <!-- end of countdown -->
                             <div class="ico-progress-bar rounded--full d-flex align-items-center mb-2">
-                                <div class="ico-progress-bar__inner rounded--full bg-color--primary jsElement" data-progress-horizon="3"></div>
+                                <div class="ico-progress-bar__inner rounded--full bg-color--primary jsElement"
+                                id="percentRound1"  data-progress-horizon="1"></div>
                             </div>
                             <div class="d-flex justify-content-between">
                                 <div class="ico-progress__text">
                                     <span class="body-font color--primary opacity--70 font-w--500">Raised</span>
-                                    <p class="text-color--300 h6-font font-w--700">457 373 $</p>
+                                    <p id="raised" class="text-color--300 h6-font font-w--700">457 373 $</p>
                                 </div>
                                 <div class="ico-progress__text text-right">
                                     <span class="body-font color--primary opacity--70 font-w--500">Hard cap</span>
-                                    <p class="text-color--300 h6-font font-w--700">96 000 0 $</p>
+                                    <p class="text-color--300 h6-font font-w--700">750,000,000.00 $</p>
 
                                 </div>
                             </div>
@@ -208,7 +229,9 @@
                     <div class="col-12 col-lg-7 remove-space--bottom">
                         <div class="mb-5 mb-lg-7 text-center text-lg-left reveal">
                             <h2 class="h3-font font-w--600 mb-2">About StakeToClaim</h2>
-                            <p class="font-size--20">The main objectives of the project are to meet the needs of cryptocurrency projects and users for traditional services, and to provide access to investment product.</p>
+                            <p class="font-size--20">The main objectives of the project are to meet the needs of
+                                cryptocurrency projects and users for traditional services, and to provide access to
+                                investment product.</p>
                         </div>
                         <!-- end of section title -->
                         <div class="d-md-flex mb-4 mb-lg-5 text-center text-md-left reveal">
@@ -217,7 +240,9 @@
                             </span>
                             <div>
                                 <h3 class="h5-font font-w--600 text-color--200 mb-1">Our Mission</h3>
-                                <p class="text-color--500">IcoNijna brings together best aspects of crypto- and real economy in order to get to a qualitatively new level - composite economy. This means a simple integration of rules and customs of existing industries and segments
+                                <p class="text-color--500">IcoNijna brings together best aspects of crypto- and real
+                                    economy in order to get to a qualitatively new level - composite economy. This means
+                                    a simple integration of rules and customs of existing industries and segments
                                     of global and local economies.</p>
                             </div>
                         </div>
@@ -228,7 +253,9 @@
                             </span>
                             <div>
                                 <h3 class="h5-font font-w--600 text-color--200 mb-1">Our Vision</h3>
-                                <p class="text-color--500">If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $.17 each. You may be saying to yourself, “Wow, what a deal!”.</p>
+                                <p class="text-color--500">If you are looking at blank cassettes on the web, you may be
+                                    very confused at the difference in price. You may see some for as low as $.17 each.
+                                    You may be saying to yourself, “Wow, what a deal!”.</p>
                             </div>
                         </div>
                         <!-- end of single item -->
@@ -238,7 +265,9 @@
                             </span>
                             <div>
                                 <h3 class="h5-font font-w--600 text-color--200 mb-1">Our Background</h3>
-                                <p class="text-color--500">IcoNijna brings together best aspects of crypto- and real economy in order to get to a qualitatively new level - composite economy. This means a simple integration of rules and customs of existing industries and segments
+                                <p class="text-color--500">IcoNijna brings together best aspects of crypto- and real
+                                    economy in order to get to a qualitatively new level - composite economy. This means
+                                    a simple integration of rules and customs of existing industries and segments
                                     of global and local economies.</p>
                             </div>
                         </div>
@@ -251,7 +280,8 @@
         <!-- =========== End of About ============ -->
 
         <!-- =========== Start of working process ============ -->
-        <section class="space--top space--bottom--2 section--darkblue process process--v1 bg-gradient--darkblue--3" id="working-process">
+        <section class="space--top space--bottom--2 section--darkblue process process--v1 bg-gradient--darkblue--3"
+            id="working-process">
             <div class="background-holder background--bottom background--cover opacity--03">
                 <img src="img/layout/image-globe.png" alt="image" class="background-image-holder">
             </div>
@@ -261,7 +291,9 @@
                     <div class="col-12 col-sm-10 col-md-8 mx-auto">
                         <div class="text-center mb-5 reveal">
                             <h2 class="h3-font font-w--600 mb-2">How it works?</h2>
-                            <p class="h6-font">Participants of the StakeToClaim platform interact with each other within a global ecosystem. StakeToClaim Token (STC) is a means of creating economic incentives to reward platform members. STC acts as the main component enabling
+                            <p class="h6-font">Participants of the StakeToClaim platform interact with each other within
+                                a global ecosystem. StakeToClaim Token (STC) is a means of creating economic incentives
+                                to reward platform members. STC acts as the main component enabling
                                 StakeToClaim Consensus between participants.</p>
                         </div>
                     </div>
@@ -271,27 +303,32 @@
                     <div class="col-12 text-center">
                         <div class="position-relative mt-xl-10 reveal">
                             <div class="pos-abs-center d-none d-lg-block">
-                                <img src="img/layout/process.png" alt="process" class="svg process__circle d-inline-block">
+                                <img src="img/layout/process.png" alt="process"
+                                    class="svg process__circle d-inline-block">
                                 <img src="img/brand-logo-icon.png" alt="brand-logo" class="pos-abs-center">
                             </div>
                             <!-- end of center image -->
                             <div class="d-sm-flex justify-content-between ml-6 ml-sm-0">
                                 <div class="options options--left text-left mb-3 mb-sm-0 remove-space--bottom">
                                     <div class="option mb-3 mb-sm-10">
-                                        <h3 class="h6-font text-sm-right text-uppercase font-w--700">Advanced <br>governance</h3>
+                                        <h3 class="h6-font text-sm-right text-uppercase font-w--700">Advanced
+                                            <br>governance</h3>
                                         <span class="decor"></span>
                                     </div>
                                     <div class="option mb-3 mb-sm-10">
-                                        <h3 class="h6-font text-sm-right text-uppercase font-w--700">Investment <br>platform commissions</h3>
+                                        <h3 class="h6-font text-sm-right text-uppercase font-w--700">Investment
+                                            <br>platform commissions</h3>
                                         <span class="decor"></span>
                                     </div>
                                     <div class="option mb-3 mb-sm-10">
-                                        <h3 class="h6-font text-sm-right text-uppercase font-w--700">Mining <br>pool rewards</h3>
+                                        <h3 class="h6-font text-sm-right text-uppercase font-w--700">Mining <br>pool
+                                            rewards</h3>
                                         <span class="decor"></span>
                                     </div>
                                 </div>
                                 <!-- end of left side content -->
-                                <div class="process__circle--mobile position-relative d-none d-sm-flex d-lg-none align-items-center">
+                                <div
+                                    class="process__circle--mobile position-relative d-none d-sm-flex d-lg-none align-items-center">
                                     <span class="mobile-logo">
                                         <img src="img/brand-logo-icon.png" alt="brand-logo" class="pos-abs-center">
                                     </span>
@@ -300,15 +337,18 @@
                                 <div class="d-flex justify-content-between">
                                     <div class="options options--right text-right text-left remove-space--bottom">
                                         <div class="option mb-3 mb-sm-10">
-                                            <h3 class="h6-font text-left text-uppercase font-w--700">Bonded <br>DPOS</h3>
+                                            <h3 class="h6-font text-left text-uppercase font-w--700">Bonded <br>DPOS
+                                            </h3>
                                             <span class="decor"></span>
                                         </div>
                                         <div class="option mb-3 mb-sm-10">
-                                            <h3 class="h6-font text-left text-uppercase font-w--700">Electronic<br>payment system</h3>
+                                            <h3 class="h6-font text-left text-uppercase font-w--700">
+                                                Electronic<br>payment system</h3>
                                             <span class="decor"></span>
                                         </div>
                                         <div class="option mb-3 mb-sm-10">
-                                            <h3 class="h6-font text-left text-uppercase font-w--700">Exclusive <br>features</h3>
+                                            <h3 class="h6-font text-left text-uppercase font-w--700">Exclusive
+                                                <br>features</h3>
                                             <span class="decor"></span>
                                         </div>
                                     </div>
@@ -331,7 +371,9 @@
                     <div class="col-12 col-md-9 mx-auto mx-md-0">
                         <div class="mb-5 mb-lg-7 text-center text-md-left reveal">
                             <h2 class="h3-font font-w--600 mb-2">Benefits of using StakeToClaim</h2>
-                            <p class="h6-font">gives people access to wristbands that allow cashless payments at events, festivals, and venues across borders. During that time, our sample size was three million, one hundred and twenty-nine thousand drivers. According to
+                            <p class="h6-font">gives people access to wristbands that allow cashless payments at events,
+                                festivals, and venues across borders. During that time, our sample size was three
+                                million, one hundred and twenty-nine thousand drivers. According to
                                 our information, this is the largest dataset in the world.</p>
                         </div>
                     </div>
@@ -349,7 +391,9 @@
                                 </span>
                                 <div>
                                     <h3 class="h5-font text-color--200 font-w--600 mb-2">Decentralized</h3>
-                                    <p class="text-color--500">We believe it is incredibly important to redistribute this power & profitability, and hand it back over to the people - the real consumers, borrowers and lenders.</p>
+                                    <p class="text-color--500">We believe it is incredibly important to redistribute
+                                        this power & profitability, and hand it back over to the people - the real
+                                        consumers, borrowers and lenders.</p>
                                 </div>
                             </div>
                         </div>
@@ -361,7 +405,9 @@
                                 </span>
                                 <div>
                                     <h3 class="h5-font text-color--200 font-w--600 mb-2">Peer to peer network</h3>
-                                    <p class="text-color--500">Utilizing the power of the global community and the sharing economy to tear down the barriers and revolutionize the old & inefficient financial systems.</p>
+                                    <p class="text-color--500">Utilizing the power of the global community and the
+                                        sharing economy to tear down the barriers and revolutionize the old &
+                                        inefficient financial systems.</p>
                                 </div>
                             </div>
                         </div>
@@ -375,8 +421,10 @@
                                     <img src="img/icon-wallet.svg" alt="icon">
                                 </span>
                                 <div>
-                                    <h3 class="h5-font text-color--200 font-w--600 mb-2">Multicurrency crypto wallet</h3>
-                                    <p class="text-color--500">Our crypto wallet function will use the bank's infrastructure for cold storage of funds with bank grade security.</p>
+                                    <h3 class="h5-font text-color--200 font-w--600 mb-2">Multicurrency crypto wallet
+                                    </h3>
+                                    <p class="text-color--500">Our crypto wallet function will use the bank's
+                                        infrastructure for cold storage of funds with bank grade security.</p>
                                 </div>
                             </div>
                         </div>
@@ -388,7 +436,9 @@
                                 </span>
                                 <div>
                                     <h3 class="h5-font text-color--200 font-w--600 mb-2">True value creation</h3>
-                                    <p class="text-color--500">Using innovation and creativity, our community of architects, developers revolutionaries believe in the creation of a bid meets an ask.</p>
+                                    <p class="text-color--500">Using innovation and creativity, our community of
+                                        architects, developers revolutionaries believe in the creation of a bid meets an
+                                        ask.</p>
                                 </div>
                             </div>
                         </div>
@@ -412,7 +462,8 @@
                             <div class="col-12 ml-md-auto">
                                 <div class="mb-4 text-center text-sm-left reveal">
                                     <h2 class="h3-font font-w--600 mb-1">Analytics in your pocket now!</h2>
-                                    <p class="h6-font">Login to the StakeToClaim App and use ETH from your wallet to buy STC tokens and get rewards.</p>
+                                    <p class="h6-font">Login to the StakeToClaim App and use ETH from your wallet to buy
+                                        STC tokens and get rewards.</p>
                                 </div>
                                 <!-- end of title -->
                                 <ul class="pl-2 mb-6 text-left reveal">
@@ -438,7 +489,8 @@
                                 <!-- end of main content -->
                                 <div class="button-group d-flex flex-column flex-sm-row align-items-center reveal">
                                     <div class="d-flex flex-column align-items-center mb-2">
-                                        <a href="#" class="btn btn-border btn-border--color--primary btn-border--width--2 rounded--full color--white btn-hover--splash">
+                                        <a href="#"
+                                            class="btn btn-border btn-border--color--primary btn-border--width--2 rounded--full color--white btn-hover--splash">
                                             <span class="btn__text">Download Now</span>
                                         </a>
                                         <span class="text-color--500 mt-2">Available for any OS</span>
@@ -463,13 +515,16 @@
         <!-- =========== End of Benefits and CTA ============ -->
 
         <!-- =========== Start of Token  Details ============ -->
-        <section class="space token-sale-details token-sale-details--v1 section--darkblue bg-gradient--darkblue--3" id="token-sale-details">
+        <section class="space token-sale-details token-sale-details--v1 section--darkblue bg-gradient--darkblue--3"
+            id="token-sale-details">
             <div class="container">
                 <div class="row align-items-end">
                     <div class="col-12 col-lg-6 col-xl-7 mx-auto mx-md-0 remove-space--bottom">
                         <div class="mb-5 mb-lg-7 text-center text-md-left reveal">
                             <h2 class="h3-font font-w--600 mb-2">Token sale details</h2>
-                            <p class="h6-font">Total amount of STC released is 1,000,000,000. No additional token releases will take place. If all STC available for sale are not purchased, the remaining tokens are destroyed. Token distribution takes place 10 days after
+                            <p class="h6-font">Total amount of STC released is 1,000,000,000. No additional token
+                                releases will take place. If all STC available for sale are not purchased, the remaining
+                                tokens are destroyed. Token distribution takes place 10 days after
                                 the token sale is complete.</p>
                         </div>
                         <!-- end of section title  -->
@@ -501,13 +556,16 @@
                         <div class="token-calculator bg-color--blue-opacity--10 rounded--05 p-2 p-md-4 reveal">
                             <div class="mb-4">
                                 <h3 class="h4-font font-w--600 mb-1">Token calculation </h3>
-                                <span class="text-color--400 font-size--15">Use the calculator to better understand conversions from popular crypto currencies.</span>
+                                <span class="text-color--400 font-size--15">Use the calculator to better understand
+                                    conversions from popular crypto currencies.</span>
                             </div>
                             <!-- end of title -->
                             <div class="d-flex align-items-center flex-wrap">
-                                <button class="token-calculator__coin token-calculator__coin--is-active d-flex align-items-center rounded--05">
+                                <button
+                                    class="token-calculator__coin token-calculator__coin--is-active d-flex align-items-center rounded--05">
                                     <img src="img/icon-eth.svg" alt="coin-icon" class="svg">
-                                    <span class="coin-name font-w--600 color--white ml-1" data-coin="eth">Ethereum</span>
+                                    <span class="coin-name font-w--600 color--white ml-1"
+                                        data-coin="eth">Ethereum</span>
                                 </button>
                                 <button class="token-calculator__coin d-flex align-items-center rounded--05">
                                     <img src="img/icon-btc.svg" alt="coin-icon" class="svg">
@@ -515,7 +573,8 @@
                                 </button>
                                 <button class="token-calculator__coin d-flex align-items-center rounded--05">
                                     <img src="img/icon-bch.svg" alt="coin-icon" class="svg">
-                                    <span class="coin-name font-w--600 color--white ml-1" data-coin="bch">Bitcoin Cash</span>
+                                    <span class="coin-name font-w--600 color--white ml-1" data-coin="bch">Bitcoin
+                                        Cash</span>
                                 </button>
                                 <button class="token-calculator__coin d-flex align-items-center rounded--05">
                                     <img src="img/icon-ltc.svg" alt="coin-icon" class="svg">
@@ -526,12 +585,15 @@
                             <!-- end of calculator currency -->
                             <div class="token-calculator-fields bg-color--blue-opacity--15 rounded--05 mt-3">
                                 <div class="input-field-row input-field-row--src">
-                                    <input type="number" value="" placeholder="100000" class="currency-input--src body-font font-w--600">
+                                    <input type="number" value="" placeholder="100000"
+                                        class="currency-input--src body-font font-w--600">
                                     <span class="currency-name body-font font-w--600 text-uppercase">STC</span>
                                 </div>
                                 <div class="input-field-row pb-0">
-                                    <input type="number" readonly value="2.58893432" class="currency-input body-font font-w--600">
-                                    <span class="currency-name currency-name--target body-font font-w--600 text-uppercase">ETH</span>
+                                    <input type="number" readonly value="2.58893432"
+                                        class="currency-input body-font font-w--600">
+                                    <span
+                                        class="currency-name currency-name--target body-font font-w--600 text-uppercase">ETH</span>
                                 </div>
                             </div>
                         </div>
@@ -549,12 +611,15 @@
                     </div>
                     <!-- end of title row -->
                     <div class="row py-6 ">
-                        <div class="col-12 col-md-10 col-lg-7 mx-auto d-flex flex-column align-items-center flex-sm-row align-items-sm-end justify-content-center justify-content-md-between text-center">
+                        <div
+                            class="col-12 col-md-10 col-lg-7 mx-auto d-flex flex-column align-items-center flex-sm-row align-items-sm-end justify-content-center justify-content-md-between text-center">
                             <div class="text-center mr-1 mr-md-0 mb-3 mb-sm-0 reveal">
                                 <span class="font-size--20 color--primary font-w--700 mb-1">35% Bonus</span>
                                 <div class="position-relative">
                                     <div class="token-progress jsElement" data-top="27">
-                                        <span class="token-progress__text font-size--12 text-color--500 font-w--500">Current progress</span>
+                                        <span
+                                            class="token-progress__text font-size--12 text-color--500 font-w--500">Current
+                                            progress</span>
                                         <div class="">
                                             <span class="decor"></span>
                                             <span class="line"></span>
@@ -604,7 +669,9 @@
                     <div class="col-12 col-sm-10 col-md-8 mx-auto">
                         <div class="text-center mb-5 mb-lg-7 reveal">
                             <h2 class="h3-font font-w--600 mb-2">Token sale Information</h2>
-                            <p class="h6-font">gives people access to wristbands that allow cashless payments at events, festivals, and venues across borders. During that time, our sample size was three million.</p>
+                            <p class="h6-font">gives people access to wristbands that allow cashless payments at events,
+                                festivals, and venues across borders. During that time, our sample size was three
+                                million.</p>
                         </div>
                     </div>
                 </div>
@@ -612,9 +679,11 @@
                 <div class="row">
                     <div class="col-12 col-lg-8 pr-lg-6 mb-4 mb-lg-0">
                         <div class="token-saleinfo-dist d-md-flex align-items-md-center reveal">
-                            <div id="pie-chart--v1" class="pie-chart--flat position-relative mx-auto mr-md-3 mb-3 mb-md-0">
+                            <div id="pie-chart--v1"
+                                class="pie-chart--flat position-relative mx-auto mr-md-3 mb-3 mb-md-0">
                                 <div class="text-center d-flex flex-column pos-abs-center">
-                                    <span class="text-color--400 font-size--14 font-w--600 mb-1">Total Token Supply</span>
+                                    <span class="text-color--400 font-size--14 font-w--600 mb-1">Total Token
+                                        Supply</span>
                                     <span class="text-color--400 font-w--600 mb-1">1,000,000,000</span>
                                     <span class="text-color--400 font-w--600">STC</span>
                                 </div>
@@ -627,14 +696,16 @@
                                     <li class="font-w--500 d-flex align-items-center justify-content-between mb-1">
                                         <div class="d-flex align-items-center">
                                             <span class="oval--md mr-1 jsElement" data-bg-color="#3260ED"></span>
-                                            <span class="content-list__name text-color--400">Token sale participants</span>
+                                            <span class="content-list__name text-color--400">Token sale
+                                                participants</span>
                                         </div>
                                         <span class="content-list__value text-color--400">40%</span>
                                     </li>
                                     <li class="font-w--500 d-flex align-items-center justify-content-between mb-1">
                                         <div class="d-flex align-items-center">
                                             <span class="oval--md mr-1 jsElement" data-bg-color="#8CA8FF"></span>
-                                            <span class="content-list__name text-color--400">Founders and project team</span>
+                                            <span class="content-list__name text-color--400">Founders and project
+                                                team</span>
                                         </div>
                                         <span class="content-list__value text-color--400">30%</span>
                                     </li>
@@ -648,7 +719,8 @@
                                     <li class="font-w--500 d-flex align-items-center justify-content-between mb-1">
                                         <div class="d-flex align-items-center">
                                             <span class="oval--md mr-1 jsElement" data-bg-color="#D65800"></span>
-                                            <span class="content-list__name text-color--400">Operational fund within the project</span>
+                                            <span class="content-list__name text-color--400">Operational fund within the
+                                                project</span>
                                         </div>
                                         <span class="content-list__value text-color--400">6%</span>
                                     </li>
@@ -702,7 +774,8 @@
                             <ul class="content-list list-unstyled remove-space--bottom">
                                 <li class="font-w--500 d-flex align-items-center justify-content-between mb-1">
                                     <div class="d-flex align-items-center">
-                                        <span class="content-list__name text-color--400">Core phase of tokens sale</span>
+                                        <span class="content-list__name text-color--400">Core phase of tokens
+                                            sale</span>
                                     </div>
                                     <span class="content-list__value text-color--400">40%</span>
                                 </li>
@@ -720,7 +793,8 @@
                                 </li>
                                 <li class="font-w--500 d-flex align-items-center justify-content-between mb-1">
                                     <div class="d-flex align-items-center">
-                                        <span class="content-list__name text-color--400">Operational fund within the project</span>
+                                        <span class="content-list__name text-color--400">Operational fund within the
+                                            project</span>
                                     </div>
                                     <span class="content-list__value text-color--400">10%</span>
                                 </li>
@@ -762,12 +836,14 @@
                                 <div class="d-md-flex align-items-md-center">
                                     <div class="mr-5 pr-5 mr-xl-7 pr-xl-7 mb-3 mb-md-0 position-relative">
                                         <span class="text-color--500 font-w--600 mb-1 opacity--60">2020</span>
-                                        <h3 class="slide__title font-w--600 font-size--26 text-color--200">Quarter - 1</h3>
+                                        <h3 class="slide__title font-w--600 font-size--26 text-color--200">Quarter - 1
+                                        </h3>
                                         <span class="d-none d-md-inline-block decor decor--square"></span>
                                     </div>
                                     <ul class="pl-2 pl-md-0">
                                         <li class="text-color--400">
-                                            <p class="h6-font">Founders of STC meet to confirm ideas around decentralized travel platform.</p>
+                                            <p class="h6-font">Founders of STC meet to confirm ideas around
+                                                decentralized travel platform.</p>
                                         </li>
                                         <li class="text-color--400">
                                             <p class="h6-font">Token is tested and ready for release.</p>
@@ -779,7 +855,8 @@
                                             <p class="h6-font">Sale website optimized.</p>
                                         </li>
                                         <li class="text-color--400">
-                                            <p class="h6-font">Web platform and application designed around user accessibility.</p>
+                                            <p class="h6-font">Web platform and application designed around user
+                                                accessibility.</p>
                                         </li>
                                     </ul>
                                 </div>
@@ -789,18 +866,22 @@
                                 <div class="d-md-flex align-items-md-center">
                                     <div class="mr-5 pr-5 mr-xl-7 pr-xl-7 mb-3 mb-md-0 position-relative">
                                         <span class="text-color--500 font-w--600 mb-1 opacity--60">2020</span>
-                                        <h3 class="slide__title font-size--26 font-w--600 text-color--200">Quarter - 2</h3>
+                                        <h3 class="slide__title font-size--26 font-w--600 text-color--200">Quarter - 2
+                                        </h3>
                                         <span class="d-none d-md-inline-block decor decor--square"></span>
                                     </div>
                                     <ul class="pl-2 pl-md-0">
                                         <li class="text-color--400">
-                                            <p class="h6-font">Listing STC token on exchanges (Approximately 3-month after Main-sale concludes.</p>
+                                            <p class="h6-font">Listing STC token on exchanges (Approximately 3-month
+                                                after Main-sale concludes.</p>
                                         </li>
                                         <li class="text-color--400">
-                                            <p class="h6-font">Integration of platform in line with blockchain including fiat and cryptocurrency payment methods.</p>
+                                            <p class="h6-font">Integration of platform in line with blockchain including
+                                                fiat and cryptocurrency payment methods.</p>
                                         </li>
                                         <li class="text-color--400">
-                                            <p class="h6-font">Peer-to-Peer chat option and amalgamation of AI-based dispute system development.</p>
+                                            <p class="h6-font">Peer-to-Peer chat option and amalgamation of AI-based
+                                                dispute system development.</p>
                                         </li>
                                     </ul>
                                 </div>
@@ -810,15 +891,18 @@
                                 <div class="d-md-flex align-items-md-center">
                                     <div class="mr-5 pr-5 mr-xl-7 pr-xl-7 mb-3 mb-md-0 position-relative">
                                         <span class="text-color--500 font-w--600 mb-1 opacity--60">2020</span>
-                                        <h3 class="slide__title font-size--26 font-w--600 text-color--200">Quarter - 3</h3>
+                                        <h3 class="slide__title font-size--26 font-w--600 text-color--200">Quarter - 3
+                                        </h3>
                                         <span class="d-none d-md-inline-block decor decor--square"></span>
                                     </div>
                                     <ul class="pl-2 pl-md-0">
                                         <li class="text-color--400">
-                                            <p class="h6-font">Release of IcoNijna beta application and web platform Release Ticket bookings on the platform.</p>
+                                            <p class="h6-font">Release of IcoNijna beta application and web platform
+                                                Release Ticket bookings on the platform.</p>
                                         </li>
                                         <li class="text-color--400">
-                                            <p class="h6-font">Release V.2 of the IcoNijna platform updated now offering Airlines platform.</p>
+                                            <p class="h6-font">Release V.2 of the IcoNijna platform updated now offering
+                                                Airlines platform.</p>
                                         </li>
                                         <li class="text-color--400">
                                             <p class="h6-font">Development of Smart contract.</p>
@@ -834,15 +918,18 @@
                                 <div class="d-md-flex align-items-md-center">
                                     <div class="mr-5 pr-5 mr-xl-7 pr-xl-7 mb-3 mb-md-0 position-relative">
                                         <span class="text-color--500 font-w--600 mb-1 opacity--60">2021</span>
-                                        <h3 class="slide__title font-size--26 font-w--600 text-color--200">Quarter - 1</h3>
+                                        <h3 class="slide__title font-size--26 font-w--600 text-color--200">Quarter - 1
+                                        </h3>
                                         <span class="d-none d-md-inline-block decor decor--square"></span>
                                     </div>
                                     <ul class="pl-2 pl-md-0">
                                         <li class="text-color--400">
-                                            <p class="h6-font">Release V.2 of the IcoNijna platform updated now offering Airlines platform.</p>
+                                            <p class="h6-font">Release V.2 of the IcoNijna platform updated now offering
+                                                Airlines platform.</p>
                                         </li>
                                         <li class="text-color--400">
-                                            <p class="h6-font">Integration of platform in line with blockchain including fiat and cryptocurrency payment methods.</p>
+                                            <p class="h6-font">Integration of platform in line with blockchain including
+                                                fiat and cryptocurrency payment methods.</p>
                                         </li>
                                         <li class="text-color--400">
                                             <p class="h6-font">Development of ICO personal account.</p>
@@ -858,18 +945,22 @@
                                 <div class="d-md-flex align-items-md-center">
                                     <div class="mr-5 pr-5 mr-xl-7 pr-xl-7 mb-3 mb-md-0 position-relative">
                                         <span class="text-color--500 font-w--600 mb-1 opacity--60">2021</span>
-                                        <h3 class="slide__title font-size--26 font-w--600 text-color--200">Quarter - 2</h3>
+                                        <h3 class="slide__title font-size--26 font-w--600 text-color--200">Quarter - 2
+                                        </h3>
                                         <span class="d-none d-md-inline-block decor decor--square"></span>
                                     </div>
                                     <ul class="pl-2 pl-md-0">
                                         <li class="text-color--400">
-                                            <p class="h6-font">Listing STC token on exchanges (Approximately 3-month after Main-sale concludes.</p>
+                                            <p class="h6-font">Listing STC token on exchanges (Approximately 3-month
+                                                after Main-sale concludes.</p>
                                         </li>
                                         <li class="text-color--400">
-                                            <p class="h6-font">Integration of platform in line with blockchain including fiat and cryptocurrency payment methods.</p>
+                                            <p class="h6-font">Integration of platform in line with blockchain including
+                                                fiat and cryptocurrency payment methods.</p>
                                         </li>
                                         <li class="text-color--400">
-                                            <p class="h6-font">Peer-to-Peer chat option and amalgamation of AI-based dispute system development.</p>
+                                            <p class="h6-font">Peer-to-Peer chat option and amalgamation of AI-based
+                                                dispute system development.</p>
                                         </li>
                                     </ul>
                                 </div>
@@ -879,12 +970,14 @@
                                 <div class="d-md-flex align-items-md-center">
                                     <div class="mr-5 pr-5 mr-xl-7 pr-xl-7 mb-3 mb-md-0 position-relative">
                                         <span class="text-color--500 font-w--600 mb-1 opacity--60">2021</span>
-                                        <h3 class="slide__title font-size--26 font-w--600 text-color--200">Quarter - 3</h3>
+                                        <h3 class="slide__title font-size--26 font-w--600 text-color--200">Quarter - 3
+                                        </h3>
                                         <span class="d-none d-md-inline-block decor decor--square"></span>
                                     </div>
                                     <ul class="pl-2 pl-md-0">
                                         <li class="text-color--400">
-                                            <p class="h6-font">Founders of STC meet to confirm ideas around decentralized travel platform.</p>
+                                            <p class="h6-font">Founders of STC meet to confirm ideas around
+                                                decentralized travel platform.</p>
                                         </li>
                                         <li class="text-color--400">
                                             <p class="h6-font">Token is tested and ready for release.</p>
@@ -896,7 +989,8 @@
                                             <p class="h6-font">Sale website optimized.</p>
                                         </li>
                                         <li class="text-color--400">
-                                            <p class="h6-font">Web platform and application designed around user accessibility.</p>
+                                            <p class="h6-font">Web platform and application designed around user
+                                                accessibility.</p>
                                         </li>
                                     </ul>
                                 </div>
@@ -906,15 +1000,18 @@
                                 <div class="d-md-flex align-items-md-center">
                                     <div class="mr-5 pr-5 mr-xl-7 pr-xl-7 mb-3 mb-md-0 position-relative">
                                         <span class="text-color--500 font-w--600 mb-1 opacity--60">2022</span>
-                                        <h3 class="slide__title font-size--26 font-w--600 text-color--200">Quarter - 1</h3>
+                                        <h3 class="slide__title font-size--26 font-w--600 text-color--200">Quarter - 1
+                                        </h3>
                                         <span class="d-none d-md-inline-block decor decor--square"></span>
                                     </div>
                                     <ul class="pl-2 pl-md-0">
                                         <li class="text-color--400">
-                                            <p class="h6-font">Release of IcoNijna beta application and web platform Release Ticket bookings on the platform.</p>
+                                            <p class="h6-font">Release of IcoNijna beta application and web platform
+                                                Release Ticket bookings on the platform.</p>
                                         </li>
                                         <li class="text-color--400">
-                                            <p class="h6-font">Release V.2 of the IcoNijna platform updated now offering Airlines platform.</p>
+                                            <p class="h6-font">Release V.2 of the IcoNijna platform updated now offering
+                                                Airlines platform.</p>
                                         </li>
                                         <li class="text-color--400">
                                             <p class="h6-font">Development of Smart contract.</p>
@@ -930,15 +1027,18 @@
                                 <div class="d-md-flex align-items-md-center">
                                     <div class="mr-5 pr-5 mr-xl-7 pr-xl-7 mb-3 mb-md-0 position-relative">
                                         <span class="text-color--500 font-w--600 mb-1 opacity--60">2022</span>
-                                        <h3 class="slide__title font-size--26 font-w--600 text-color--200">Quarter - 2</h3>
+                                        <h3 class="slide__title font-size--26 font-w--600 text-color--200">Quarter - 2
+                                        </h3>
                                         <span class="d-none d-md-inline-block decor decor--square"></span>
                                     </div>
                                     <ul class="pl-2 pl-md-0">
                                         <li class="text-color--400">
-                                            <p class="h6-font">Release V.2 of the IcoNijna platform updated now offering Airlines platform.</p>
+                                            <p class="h6-font">Release V.2 of the IcoNijna platform updated now offering
+                                                Airlines platform.</p>
                                         </li>
                                         <li class="text-color--400">
-                                            <p class="h6-font">Integration of platform in line with blockchain including fiat and cryptocurrency payment methods.</p>
+                                            <p class="h6-font">Integration of platform in line with blockchain including
+                                                fiat and cryptocurrency payment methods.</p>
                                         </li>
                                         <li class="text-color--400">
                                             <p class="h6-font">Development of ICO personal account.</p>
@@ -954,18 +1054,22 @@
                                 <div class="d-md-flex align-items-md-center">
                                     <div class="mr-5 pr-5 mr-xl-7 pr-xl-7 mb-3 mb-md-0 position-relative">
                                         <span class="text-color--500 font-w--600 mb-1 opacity--60">2022</span>
-                                        <h3 class="slide__title font-size--26 font-w--600 text-color--200">Quarter - 3</h3>
+                                        <h3 class="slide__title font-size--26 font-w--600 text-color--200">Quarter - 3
+                                        </h3>
                                         <span class="d-none d-md-inline-block decor decor--square"></span>
                                     </div>
                                     <ul class="pl-2 pl-md-0">
                                         <li class="text-color--400">
-                                            <p class="h6-font">Listing STC token on exchanges (Approximately 3-month after Main-sale concludes.</p>
+                                            <p class="h6-font">Listing STC token on exchanges (Approximately 3-month
+                                                after Main-sale concludes.</p>
                                         </li>
                                         <li class="text-color--400">
-                                            <p class="h6-font">Integration of platform in line with blockchain including fiat and cryptocurrency payment methods.</p>
+                                            <p class="h6-font">Integration of platform in line with blockchain including
+                                                fiat and cryptocurrency payment methods.</p>
                                         </li>
                                         <li class="text-color--400">
-                                            <p class="h6-font">Peer-to-Peer chat option and amalgamation of AI-based dispute system development.</p>
+                                            <p class="h6-font">Peer-to-Peer chat option and amalgamation of AI-based
+                                                dispute system development.</p>
                                         </li>
                                     </ul>
                                 </div>
@@ -999,9 +1103,12 @@
                                     <h3 class="h6-font font-w--600 color--primary">Elizabeth Guzman</h3>
                                     <span class="font-size--14 opacity--80 font-w--500">Founder, CEO</span>
                                     <ul class="icon-group justify-content-center my-1">
-                                        <li><a href="#" class="color--primary opacity--70 px-1"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#" class="color--primary opacity--70 px-1"><i class="fab fa-linkedin-in"></i></a></li>
-                                        <li><a href="#" class="color--primary opacity--70 px-1"><i class="fab fa-telegram-plane"></i></a></li>
+                                        <li><a href="#" class="color--primary opacity--70 px-1"><i
+                                                    class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#" class="color--primary opacity--70 px-1"><i
+                                                    class="fab fa-linkedin-in"></i></a></li>
+                                        <li><a href="#" class="color--primary opacity--70 px-1"><i
+                                                    class="fab fa-telegram-plane"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -1014,9 +1121,12 @@
                                     <h3 class="h6-font font-w--600 color--primary">Tom Castro</h3>
                                     <span class="font-size--14 opacity--80 font-w--500">Founder, CTO</span>
                                     <ul class="icon-group justify-content-center my-1">
-                                        <li><a href="#" class="color--primary opacity--70 px-1"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#" class="color--primary opacity--70 px-1"><i class="fab fa-linkedin-in"></i></a></li>
-                                        <li><a href="#" class="color--primary opacity--70 px-1"><i class="fab fa-telegram-plane"></i></a></li>
+                                        <li><a href="#" class="color--primary opacity--70 px-1"><i
+                                                    class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#" class="color--primary opacity--70 px-1"><i
+                                                    class="fab fa-linkedin-in"></i></a></li>
+                                        <li><a href="#" class="color--primary opacity--70 px-1"><i
+                                                    class="fab fa-telegram-plane"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -1029,9 +1139,12 @@
                                     <h3 class="h6-font font-w--600 color--primary">Steven Clark</h3>
                                     <span class="font-size--14 opacity--80 font-w--500">Backend developer</span>
                                     <ul class="icon-group justify-content-center my-1">
-                                        <li><a href="#" class="color--primary opacity--70 px-1"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#" class="color--primary opacity--70 px-1"><i class="fab fa-linkedin-in"></i></a></li>
-                                        <li><a href="#" class="color--primary opacity--70 px-1"><i class="fab fa-telegram-plane"></i></a></li>
+                                        <li><a href="#" class="color--primary opacity--70 px-1"><i
+                                                    class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#" class="color--primary opacity--70 px-1"><i
+                                                    class="fab fa-linkedin-in"></i></a></li>
+                                        <li><a href="#" class="color--primary opacity--70 px-1"><i
+                                                    class="fab fa-telegram-plane"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -1044,9 +1157,12 @@
                                     <h3 class="h6-font font-w--600 color--primary">Phoebe Watkins</h3>
                                     <span class="font-size--14 opacity--80 font-w--500">CMO</span>
                                     <ul class="icon-group justify-content-center my-1">
-                                        <li><a href="#" class="color--primary opacity--70 px-1"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#" class="color--primary opacity--70 px-1"><i class="fab fa-linkedin-in"></i></a></li>
-                                        <li><a href="#" class="color--primary opacity--70 px-1"><i class="fab fa-telegram-plane"></i></a></li>
+                                        <li><a href="#" class="color--primary opacity--70 px-1"><i
+                                                    class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#" class="color--primary opacity--70 px-1"><i
+                                                    class="fab fa-linkedin-in"></i></a></li>
+                                        <li><a href="#" class="color--primary opacity--70 px-1"><i
+                                                    class="fab fa-telegram-plane"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -1059,9 +1175,12 @@
                                     <h3 class="h6-font font-w--600 color--primary">Marcus Moran</h3>
                                     <span class="font-size--14 opacity--80 font-w--500">Co-founder</span>
                                     <ul class="icon-group justify-content-center my-1">
-                                        <li><a href="#" class="color--primary opacity--70 px-1"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#" class="color--primary opacity--70 px-1"><i class="fab fa-linkedin-in"></i></a></li>
-                                        <li><a href="#" class="color--primary opacity--70 px-1"><i class="fab fa-telegram-plane"></i></a></li>
+                                        <li><a href="#" class="color--primary opacity--70 px-1"><i
+                                                    class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#" class="color--primary opacity--70 px-1"><i
+                                                    class="fab fa-linkedin-in"></i></a></li>
+                                        <li><a href="#" class="color--primary opacity--70 px-1"><i
+                                                    class="fab fa-telegram-plane"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -1074,9 +1193,12 @@
                                     <h3 class="h6-font font-w--600 color--primary">Lenora Maldonado</h3>
                                     <span class="font-size--14 opacity--80 font-w--500">Co-founder</span>
                                     <ul class="icon-group justify-content-center my-1">
-                                        <li><a href="#" class="color--primary opacity--70 px-1"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#" class="color--primary opacity--70 px-1"><i class="fab fa-linkedin-in"></i></a></li>
-                                        <li><a href="#" class="color--primary opacity--70 px-1"><i class="fab fa-telegram-plane"></i></a></li>
+                                        <li><a href="#" class="color--primary opacity--70 px-1"><i
+                                                    class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#" class="color--primary opacity--70 px-1"><i
+                                                    class="fab fa-linkedin-in"></i></a></li>
+                                        <li><a href="#" class="color--primary opacity--70 px-1"><i
+                                                    class="fab fa-telegram-plane"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -1089,9 +1211,12 @@
                                     <h3 class="h6-font font-w--600 color--primary">Elizabeth Guzman</h3>
                                     <span class="font-size--14 opacity--80 font-w--500">Risk management</span>
                                     <ul class="icon-group justify-content-center my-1">
-                                        <li><a href="#" class="color--primary opacity--70 px-1"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#" class="color--primary opacity--70 px-1"><i class="fab fa-linkedin-in"></i></a></li>
-                                        <li><a href="#" class="color--primary opacity--70 px-1"><i class="fab fa-telegram-plane"></i></a></li>
+                                        <li><a href="#" class="color--primary opacity--70 px-1"><i
+                                                    class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#" class="color--primary opacity--70 px-1"><i
+                                                    class="fab fa-linkedin-in"></i></a></li>
+                                        <li><a href="#" class="color--primary opacity--70 px-1"><i
+                                                    class="fab fa-telegram-plane"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -1104,9 +1229,12 @@
                                     <h3 class="h6-font font-w--600 color--primary">Ricardo Hogan</h3>
                                     <span class="font-size--14 opacity--80 font-w--500">Blockchain analyst</span>
                                     <ul class="icon-group justify-content-center my-1">
-                                        <li><a href="#" class="color--primary opacity--70 px-1"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#" class="color--primary opacity--70 px-1"><i class="fab fa-linkedin-in"></i></a></li>
-                                        <li><a href="#" class="color--primary opacity--70 px-1"><i class="fab fa-telegram-plane"></i></a></li>
+                                        <li><a href="#" class="color--primary opacity--70 px-1"><i
+                                                    class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#" class="color--primary opacity--70 px-1"><i
+                                                    class="fab fa-linkedin-in"></i></a></li>
+                                        <li><a href="#" class="color--primary opacity--70 px-1"><i
+                                                    class="fab fa-telegram-plane"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -1133,9 +1261,12 @@
                                 <h3 class="h6-font font-w--600 color--primary">Phoebe Watkins</h3>
                                 <span class="font-size--14 opacity--80 font-w--500">ICO Marketing Expert</span>
                                 <ul class="icon-group justify-content-center my-1">
-                                    <li><a href="#" class="color--primary opacity--70 px-1"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#" class="color--primary opacity--70 px-1"><i class="fab fa-linkedin-in"></i></a></li>
-                                    <li><a href="#" class="color--primary opacity--70 px-1"><i class="fab fa-telegram-plane"></i></a></li>
+                                    <li><a href="#" class="color--primary opacity--70 px-1"><i
+                                                class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#" class="color--primary opacity--70 px-1"><i
+                                                class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="#" class="color--primary opacity--70 px-1"><i
+                                                class="fab fa-telegram-plane"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -1148,9 +1279,12 @@
                                 <h3 class="h6-font font-w--600 color--primary">Tom Castro</h3>
                                 <span class="font-size--14 opacity--80 font-w--500">Investment Advisor</span>
                                 <ul class="icon-group justify-content-center my-1">
-                                    <li><a href="#" class="color--primary opacity--70 px-1"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#" class="color--primary opacity--70 px-1"><i class="fab fa-linkedin-in"></i></a></li>
-                                    <li><a href="#" class="color--primary opacity--70 px-1"><i class="fab fa-telegram-plane"></i></a></li>
+                                    <li><a href="#" class="color--primary opacity--70 px-1"><i
+                                                class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#" class="color--primary opacity--70 px-1"><i
+                                                class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="#" class="color--primary opacity--70 px-1"><i
+                                                class="fab fa-telegram-plane"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -1163,9 +1297,12 @@
                                 <h3 class="h6-font font-w--600 color--primary">Steven Clark</h3>
                                 <span class="font-size--14 opacity--80 font-w--500">Entrepreneur</span>
                                 <ul class="icon-group justify-content-center my-1">
-                                    <li><a href="#" class="color--primary opacity--70 px-1"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#" class="color--primary opacity--70 px-1"><i class="fab fa-linkedin-in"></i></a></li>
-                                    <li><a href="#" class="color--primary opacity--70 px-1"><i class="fab fa-telegram-plane"></i></a></li>
+                                    <li><a href="#" class="color--primary opacity--70 px-1"><i
+                                                class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#" class="color--primary opacity--70 px-1"><i
+                                                class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="#" class="color--primary opacity--70 px-1"><i
+                                                class="fab fa-telegram-plane"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -1178,9 +1315,12 @@
                                 <h3 class="h6-font font-w--600 color--primary">Rena Vega</h3>
                                 <span class="font-size--14 opacity--80 font-w--500">Entrepreneur</span>
                                 <ul class="icon-group justify-content-center my-1">
-                                    <li><a href="#" class="color--primary opacity--70 px-1"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#" class="color--primary opacity--70 px-1"><i class="fab fa-linkedin-in"></i></a></li>
-                                    <li><a href="#" class="color--primary opacity--70 px-1"><i class="fab fa-telegram-plane"></i></a></li>
+                                    <li><a href="#" class="color--primary opacity--70 px-1"><i
+                                                class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#" class="color--primary opacity--70 px-1"><i
+                                                class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="#" class="color--primary opacity--70 px-1"><i
+                                                class="fab fa-telegram-plane"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -1193,9 +1333,12 @@
                                 <h3 class="h6-font font-w--600 color--primary">Marcus Moran</h3>
                                 <span class="font-size--14 opacity--80 font-w--500">Co-founder</span>
                                 <ul class="icon-group justify-content-center my-1">
-                                    <li><a href="#" class="color--primary opacity--70 px-1"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#" class="color--primary opacity--70 px-1"><i class="fab fa-linkedin-in"></i></a></li>
-                                    <li><a href="#" class="color--primary opacity--70 px-1"><i class="fab fa-telegram-plane"></i></a></li>
+                                    <li><a href="#" class="color--primary opacity--70 px-1"><i
+                                                class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#" class="color--primary opacity--70 px-1"><i
+                                                class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="#" class="color--primary opacity--70 px-1"><i
+                                                class="fab fa-telegram-plane"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -1208,9 +1351,12 @@
                                 <h3 class="h6-font font-w--600 color--primary">Lenora Maldonado</h3>
                                 <span class="font-size--14 opacity--80 font-w--500">Entrepreneur</span>
                                 <ul class="icon-group justify-content-center my-1">
-                                    <li><a href="#" class="color--primary opacity--70 px-1"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#" class="color--primary opacity--70 px-1"><i class="fab fa-linkedin-in"></i></a></li>
-                                    <li><a href="#" class="color--primary opacity--70 px-1"><i class="fab fa-telegram-plane"></i></a></li>
+                                    <li><a href="#" class="color--primary opacity--70 px-1"><i
+                                                class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#" class="color--primary opacity--70 px-1"><i
+                                                class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="#" class="color--primary opacity--70 px-1"><i
+                                                class="fab fa-telegram-plane"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -1223,9 +1369,12 @@
                                 <h3 class="h6-font font-w--600 color--primary">Elizabeth Guzman</h3>
                                 <span class="font-size--14 opacity--80 font-w--500">ICO Marketing Expert</span>
                                 <ul class="icon-group justify-content-center my-1">
-                                    <li><a href="#" class="color--primary opacity--70 px-1"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#" class="color--primary opacity--70 px-1"><i class="fab fa-linkedin-in"></i></a></li>
-                                    <li><a href="#" class="color--primary opacity--70 px-1"><i class="fab fa-telegram-plane"></i></a></li>
+                                    <li><a href="#" class="color--primary opacity--70 px-1"><i
+                                                class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#" class="color--primary opacity--70 px-1"><i
+                                                class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="#" class="color--primary opacity--70 px-1"><i
+                                                class="fab fa-telegram-plane"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -1238,9 +1387,12 @@
                                 <h3 class="h6-font font-w--600 color--primary">Ricardo Hogan</h3>
                                 <span class="font-size--14 opacity--80 font-w--500">Blockchain analyst</span>
                                 <ul class="icon-group justify-content-center my-1">
-                                    <li><a href="#" class="color--primary opacity--70 px-1"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#" class="color--primary opacity--70 px-1"><i class="fab fa-linkedin-in"></i></a></li>
-                                    <li><a href="#" class="color--primary opacity--70 px-1"><i class="fab fa-telegram-plane"></i></a></li>
+                                    <li><a href="#" class="color--primary opacity--70 px-1"><i
+                                                class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#" class="color--primary opacity--70 px-1"><i
+                                                class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="#" class="color--primary opacity--70 px-1"><i
+                                                class="fab fa-telegram-plane"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -1275,7 +1427,8 @@
                                         <h3 class="card-title h6-font font-w--600 color--white mb-0">White Paper</h3>
                                     </a>
                                 </div>
-                                <div class="card-download d-flex flex-column align-items-center justify-content-center align-items-center pos-abs-center h-100 w-100 z-index1 p-2 pb-3">
+                                <div
+                                    class="card-download d-flex flex-column align-items-center justify-content-center align-items-center pos-abs-center h-100 w-100 z-index1 p-2 pb-3">
                                     <span class="h5-font font-w--700 mb-2">Download</span>
                                     <div>
                                         <a href="#" class="font-w--600 font-size--15 color--white"><span>EN</span></a>
@@ -1297,7 +1450,8 @@
                                         <h3 class="card-title h6-font font-w--600 color--white mb-0">One Pager</h3>
                                     </a>
                                 </div>
-                                <div class="card-download d-flex flex-column align-items-center justify-content-center align-items-center pos-abs-center h-100 w-100 z-index1 p-2 pb-3">
+                                <div
+                                    class="card-download d-flex flex-column align-items-center justify-content-center align-items-center pos-abs-center h-100 w-100 z-index1 p-2 pb-3">
                                     <span class="h5-font font-w--700 mb-2">Download</span>
                                     <div>
                                         <a href="#" class="font-w--600 font-size--15 color--white"><span>EN</span></a>
@@ -1319,7 +1473,8 @@
                                         <h3 class="card-title h6-font font-w--600 color--white mb-0">Presentation</h3>
                                     </a>
                                 </div>
-                                <div class="card-download d-flex flex-column align-items-center justify-content-center align-items-center pos-abs-center h-100 w-100 z-index1 p-2 pb-3">
+                                <div
+                                    class="card-download d-flex flex-column align-items-center justify-content-center align-items-center pos-abs-center h-100 w-100 z-index1 p-2 pb-3">
                                     <span class="h5-font font-w--700 mb-2">Download</span>
                                     <div>
                                         <a href="#" class="font-w--600 font-size--15 color--white"><span>EN</span></a>
@@ -1338,10 +1493,12 @@
                                 </a>
                                 <div class="card-body align-items-center pt-1">
                                     <a href="#">
-                                        <h3 class="card-title h6-font font-w--600 color--white mb-0">Token Sale Terms</h3>
+                                        <h3 class="card-title h6-font font-w--600 color--white mb-0">Token Sale Terms
+                                        </h3>
                                     </a>
                                 </div>
-                                <div class="card-download d-flex flex-column align-items-center justify-content-center align-items-center pos-abs-center h-100 w-100 z-index1 p-2 pb-3">
+                                <div
+                                    class="card-download d-flex flex-column align-items-center justify-content-center align-items-center pos-abs-center h-100 w-100 z-index1 p-2 pb-3">
                                     <span class="h5-font font-w--700 mb-2">Download</span>
                                     <div>
                                         <a href="#" class="font-w--600 font-size--15 color--white"><span>EN</span></a>
@@ -1371,79 +1528,126 @@
                         <div class="col-12 col-lg-8">
                             <div class="accordion accordion--v1 reveal remove-space--bottom" id="accordion1">
                                 <div class="card mb-1">
-                                    <button class="btn btn-header btn-link" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                                        <span class="h6-font text-color--200 text-left font-w--600">What is Cyrpto StakeToClaim token?</span>
+                                    <button class="btn btn-header btn-link" type="button" data-toggle="collapse"
+                                        data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                        <span class="h6-font text-color--200 text-left font-w--600">What is Cyrpto
+                                            StakeToClaim token?</span>
                                         <i class="icon icon-up-arrow"></i>
                                     </button>
                                     <div id="collapse1" class="collapse show" data-parent="#accordion1">
                                         <div class="card-body pl-3">
-                                            <p class="text-color--500">Our product solves crucial problems of such giant services as Foursquare & Swarm, Groupon, and Tripadvisor. Millenial travelers don’t possess any more countless hours for preparing the trip itinerary (reading
-                                                Tripadvisor). Business travelers, in particular, complain they are having maximum 2 to 5 free hours during their work trips, which they don’t want to spend on researching what is worth doing around.</p>
+                                            <p class="text-color--500">Our product solves crucial problems of such giant
+                                                services as Foursquare & Swarm, Groupon, and Tripadvisor. Millenial
+                                                travelers don’t possess any more countless hours for preparing the trip
+                                                itinerary (reading
+                                                Tripadvisor). Business travelers, in particular, complain they are
+                                                having maximum 2 to 5 free hours during their work trips, which they
+                                                don’t want to spend on researching what is worth doing around.</p>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- end of single accordion-->
                                 <div class="card mb-1">
-                                    <button class="btn btn-header btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                                        <span class="h6-font text-color--200 text-left font-w--600">Do we already have an application?</span>
+                                    <button class="btn btn-header btn-link collapsed" type="button"
+                                        data-toggle="collapse" data-target="#collapse2" aria-expanded="false"
+                                        aria-controls="collapse2">
+                                        <span class="h6-font text-color--200 text-left font-w--600">Do we already have
+                                            an application?</span>
                                         <i class="icon icon-up-arrow"></i>
                                     </button>
                                     <div id="collapse2" class="collapse" data-parent="#accordion1">
                                         <div class="card-body pl-3">
-                                            <p class="text-color--500">Our product solves crucial problems of such giant services as Foursquare & Swarm, Groupon, and Tripadvisor. Millenial travelers don’t possess any more countless hours for preparing the trip itinerary (reading
-                                                Tripadvisor). Business travelers, in particular, complain they are having maximum 2 to 5 free hours during their work trips, which they don’t want to spend on researching what is worth doing around.</p>
+                                            <p class="text-color--500">Our product solves crucial problems of such giant
+                                                services as Foursquare & Swarm, Groupon, and Tripadvisor. Millenial
+                                                travelers don’t possess any more countless hours for preparing the trip
+                                                itinerary (reading
+                                                Tripadvisor). Business travelers, in particular, complain they are
+                                                having maximum 2 to 5 free hours during their work trips, which they
+                                                don’t want to spend on researching what is worth doing around.</p>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- end of single accordion-->
                                 <div class="card mb-1">
-                                    <button class="btn btn-header btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                                        <span class="h6-font text-color--200 text-left font-w--600">Why blockchain?</span>
+                                    <button class="btn btn-header btn-link collapsed" type="button"
+                                        data-toggle="collapse" data-target="#collapse3" aria-expanded="false"
+                                        aria-controls="collapse3">
+                                        <span class="h6-font text-color--200 text-left font-w--600">Why
+                                            blockchain?</span>
                                         <i class="icon icon-up-arrow"></i>
                                     </button>
                                     <div id="collapse3" class="collapse" data-parent="#accordion1">
                                         <div class="card-body pl-3">
-                                            <p class="text-color--500">Our product solves crucial problems of such giant services as Foursquare & Swarm, Groupon, and Tripadvisor. Millenial travelers don’t possess any more countless hours for preparing the trip itinerary (reading
-                                                Tripadvisor). Business travelers, in particular, complain they are having maximum 2 to 5 free hours during their work trips, which they don’t want to spend on researching what is worth doing around.</p>
+                                            <p class="text-color--500">Our product solves crucial problems of such giant
+                                                services as Foursquare & Swarm, Groupon, and Tripadvisor. Millenial
+                                                travelers don’t possess any more countless hours for preparing the trip
+                                                itinerary (reading
+                                                Tripadvisor). Business travelers, in particular, complain they are
+                                                having maximum 2 to 5 free hours during their work trips, which they
+                                                don’t want to spend on researching what is worth doing around.</p>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- end of single accordion-->
                                 <div class="card mb-1">
-                                    <button class="btn btn-header btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                                        <span class="h6-font text-color--200 text-left font-w--600">When is the StakeToClaim token going to be transferable?</span>
-                                            <i class="icon icon-up-arrow"></i>
+                                    <button class="btn btn-header btn-link collapsed" type="button"
+                                        data-toggle="collapse" data-target="#collapse4" aria-expanded="false"
+                                        aria-controls="collapse4">
+                                        <span class="h6-font text-color--200 text-left font-w--600">When is the
+                                            StakeToClaim token going to be transferable?</span>
+                                        <i class="icon icon-up-arrow"></i>
                                     </button>
                                     <div id="collapse4" class="collapse" data-parent="#accordion1">
                                         <div class="card-body pl-3">
-                                            <p class="text-color--500">Our product solves crucial problems of such giant services as Foursquare & Swarm, Groupon, and Tripadvisor. Millenial travelers don’t possess any more countless hours for preparing the trip itinerary (reading
-                                                Tripadvisor). Business travelers, in particular, complain they are having maximum 2 to 5 free hours during their work trips, which they don’t want to spend on researching what is worth doing around.</p>
+                                            <p class="text-color--500">Our product solves crucial problems of such giant
+                                                services as Foursquare & Swarm, Groupon, and Tripadvisor. Millenial
+                                                travelers don’t possess any more countless hours for preparing the trip
+                                                itinerary (reading
+                                                Tripadvisor). Business travelers, in particular, complain they are
+                                                having maximum 2 to 5 free hours during their work trips, which they
+                                                don’t want to spend on researching what is worth doing around.</p>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- end of single accordion-->
                                 <div class="card mb-1">
-                                    <button class="btn btn-header btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
-                                        <span class="h6-font text-color--200 text-left font-w--600">In what currency will the funds be collected?</span>
+                                    <button class="btn btn-header btn-link collapsed" type="button"
+                                        data-toggle="collapse" data-target="#collapse5" aria-expanded="false"
+                                        aria-controls="collapse5">
+                                        <span class="h6-font text-color--200 text-left font-w--600">In what currency
+                                            will the funds be collected?</span>
                                         <i class="icon icon-up-arrow"></i>
                                     </button>
                                     <div id="collapse5" class="collapse" data-parent="#accordion1">
                                         <div class="card-body pl-3">
-                                            <p class="text-color--500">Our product solves crucial problems of such giant services as Foursquare & Swarm, Groupon, and Tripadvisor. Millenial travelers don’t possess any more countless hours for preparing the trip itinerary (reading
-                                                Tripadvisor). Business travelers, in particular, complain they are having maximum 2 to 5 free hours during their work trips, which they don’t want to spend on researching what is worth doing around.</p>
+                                            <p class="text-color--500">Our product solves crucial problems of such giant
+                                                services as Foursquare & Swarm, Groupon, and Tripadvisor. Millenial
+                                                travelers don’t possess any more countless hours for preparing the trip
+                                                itinerary (reading
+                                                Tripadvisor). Business travelers, in particular, complain they are
+                                                having maximum 2 to 5 free hours during their work trips, which they
+                                                don’t want to spend on researching what is worth doing around.</p>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- end of single accordion-->
                                 <div class="card mb-1">
-                                    <button class="btn btn-header btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
-                                        <span class="h6-font text-color--200 text-left font-w--600">Where can I store STC token?</span>
+                                    <button class="btn btn-header btn-link collapsed" type="button"
+                                        data-toggle="collapse" data-target="#collapse6" aria-expanded="false"
+                                        aria-controls="collapse6">
+                                        <span class="h6-font text-color--200 text-left font-w--600">Where can I store
+                                            STC token?</span>
                                         <i class="icon icon-up-arrow"></i>
                                     </button>
                                     <div id="collapse6" class="collapse" data-parent="#accordion1">
                                         <div class="card-body pl-3">
-                                            <p class="text-color--500">Our product solves crucial problems of such giant services as Foursquare & Swarm, Groupon, and Tripadvisor. Millenial travelers don’t possess any more countless hours for preparing the trip itinerary (reading
-                                                Tripadvisor). Business travelers, in particular, complain they are having maximum 2 to 5 free hours during their work trips, which they don’t want to spend on researching what is worth doing around.</p>
+                                            <p class="text-color--500">Our product solves crucial problems of such giant
+                                                services as Foursquare & Swarm, Groupon, and Tripadvisor. Millenial
+                                                travelers don’t possess any more countless hours for preparing the trip
+                                                itinerary (reading
+                                                Tripadvisor). Business travelers, in particular, complain they are
+                                                having maximum 2 to 5 free hours during their work trips, which they
+                                                don’t want to spend on researching what is worth doing around.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1550,7 +1754,8 @@
                             <span class="mb-2">
                                 <img src="img/brand-logo-white.png" alt="brand-logo">
                             </span>
-                            <p>The main objectives of the project are to meet the needs of cryptocurrency projects and users for traditional services, and to provide access to investment product.</p>
+                            <p>The main objectives of the project are to meet the needs of cryptocurrency projects and
+                                users for traditional services, and to provide access to investment product.</p>
                         </div>
                         <!-- end of col -->
                         <div class="col-6 col-md-4 col-lg-2 mb-1 mb-lg-0">
@@ -1577,7 +1782,8 @@
                         <!-- end of widget col -->
                         <div class="col-6 col-md-4 col-lg-3 mb-1 mb-lg-0">
                             <h2 class="font-size--20 text-color--300 mb-2 font-w--700">Address</h2>
-                            <p class="">StakeToClaim PTE. LTD. <br> 167 Jalan Bukit Merah br #05-12 Connection One <br> Singapore (150167)</p>
+                            <p class="">StakeToClaim PTE. LTD. <br> 167 Jalan Bukit Merah br #05-12 Connection One <br>
+                                Singapore (150167)</p>
                         </div>
                         <!-- end of col -->
                     </div>
@@ -1599,7 +1805,8 @@
                                 <li><a href="#" class="color--primary"><i class="fab fa-bitcoin"></i></a></li>
                                 <li><a href="#" class="color--primary"><i class="fab fa-youtube"></i></a></li>
                             </ul>
-                            <p class="text-color--500 font-size--14">© 2019 <a href="#" class="text-color--500">StakeToClaim</a>. All Rights Reserved.</p>
+                            <p class="text-color--500 font-size--14">© 2019 <a href="#"
+                                    class="text-color--500">StakeToClaim</a>. All Rights Reserved.</p>
                         </div>
                     </div>
                     <!-- end of mini footer row -->
@@ -1612,6 +1819,42 @@
     </main>
     <script src="js/plugins.min.js"></script>
     <script src="js/app.js"></script>
+
+    <script>
+        function loadBar() {
+            var url = 'https://signup.staketoclaim.com/bar'
+            var options = {
+                method: 'GET',
+                timeout: 15000,
+                url: url,
+            }
+            axios(options)
+                .then((data) => {
+                    bar = data.data
+                    var filled = bar.confirmed + bar.pending
+                    var percent = 0.1 * Math.floor((1000 * filled) / (bar.max))
+                    percent = percent.toFixed(1)
+                    //console.log('Round 1 is '+percent+'% filled')
+                    if (bar.max > 0 && percent < 100) {
+                        $('#raised')[0].innerHTML = numeral(filled).format('$0,0.00')
+                        if(percent < 1)
+                        {
+                            percent=1
+                        }
+                        $('#percentRound1').width('' + percent + '%')
+                    } else if (bar.max == 0) {
+                        $("#notopen").show()
+                    } else if (percent >= 100) {
+                        $("#soldout").show()
+                    }
+
+                })
+                .catch((error) => {
+                    console.log(error)
+                })
+        }
+        loadBar()
+    </script>
 </body>
 
 </html>
