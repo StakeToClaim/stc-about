@@ -1738,9 +1738,9 @@
                         }
                         $('#percentRound1').width('' + percent + '%')
                     } else if (bar.max == 0) {
-                        $("#notopen").show()
+                        //$("#notopen").show()
                     } else if (percent >= 100) {
-                        $("#soldout").show()
+                        //$("#soldout").show()
                     }
 
                 })
@@ -1748,7 +1748,9 @@
                     console.log(error)
                 })
         }
-        loadBar()
+        setInterval(() => {
+            loadBar()
+        }, 15000);
     </script>
 </body>
 
